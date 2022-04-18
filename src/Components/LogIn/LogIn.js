@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Form, ToastContainer } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./LogIn.css";
 
 const LogIn = () => {
   return (
@@ -13,31 +12,28 @@ const LogIn = () => {
             <Form.Control type="email" placeholder="Enter email" required />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
-              // ref={passwordRef}
-              type="password"
-              placeholder="Password"
-              required
-            />
+            <Form.Control type="password" placeholder="Password" required />
           </Form.Group>
           <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
             Login
           </Button>
         </Form>
-        {/* {errorElement} */}
+
         <p>
-          New to SPORTS PHOTOGRAPHY?{" "}
+          New to Sports Photograher?{" "}
           <Link
             to="/register"
             className="text-primary pe-auto text-decoration-none"
-            // onClick={navigateRegister}
           >
             Please Register
           </Link>{" "}
         </p>
-        {/* <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p> */}
-
-        <ToastContainer />
+        <p>
+          Forget Password?{" "}
+          <button className="btn btn-link text-primary pe-auto text-decoration-none">
+            Reset Password
+          </button>{" "}
+        </p>
       </div>
     </div>
   );

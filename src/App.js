@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import LogIn from "./Components/LogIn/LogIn";
 import SignUp from "./Components/LogIn/LogIn";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="logIn" element={<LogIn></LogIn>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
