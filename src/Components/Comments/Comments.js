@@ -1,4 +1,3 @@
-import { Button } from "bootstrap";
 import React from "react";
 import "./Comments.css";
 
@@ -12,7 +11,7 @@ const Comments = (props) => {
       <h4>Comment: {comment}</h4>
 
       <h5>Ratings:{ratings}</h5>
-      <button>Book</button>
+      <button className="">Book</button>
     </div>
   );
 };
