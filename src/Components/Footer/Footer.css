@@ -1,0 +1,17 @@
+.footer{
+    background-color: black;
+    color: aliceblue;
+}
+.about-footer{
+ display: grid;
+ grid-template-columns:repeat(3,1fr);
+ padding: 35px;
+}
+.footer-ancor{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footer-ancor:hover{
+   
+    color: orange;
+}

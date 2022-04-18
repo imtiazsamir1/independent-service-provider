@@ -1,0 +1,87 @@
+[
+  {
+ "id": "001",
+ 
+ "name": "Mina98",
+ 
+ "price": 53000,
+ "comment": "As a user I have really benefited a lot from laptop.",
+ "ratings": 4.5,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1485400031595-976c74cf4e25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+ "shipping": 1,
+ "quantity": 0
+},
+
+  {
+ "id": "002",
+ 
+ "name": "Raju96",
+
+ "price": 32200,
+ "comment": "I ordered the laptop after hearing it in public. The presentation of the laptop was really awesome.",
+ "ratings": 4.5,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1628891890467-b79f2c8ba9dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+ "shipping": 1,
+ "quantity": 0
+},
+
+  {
+ "id": "003",
+ 
+ "name": "Tom87",
+
+ "price": 42700,
+ "comment": "One thing that gave me the most courage and that is that I can too.",
+ "ratings": 5,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1603722039047-bc9997bfa963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+ "shipping": 1,
+ "quantity": 0
+},
+
+  {
+ "id": "004",
+ 
+ "name": "Jery89",
+ 
+ "price": 52000,
+ "comment": "just wow!😍.",
+ "ratings": 5,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1622629797619-c100e3e67e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80",
+ "shipping": 1,
+ "quantity": 0
+},
+
+  {
+ "id": "005",
+ 
+ "name": "Pink Panthar85",
+ 
+ "price": 22000,
+ "comment": "here are so many talented programmers in our country. This laptop is an example of this.",
+ "ratings": 4,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1530870110042-98b2cb110834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+ "shipping": 1,
+ "quantity": 0
+},
+
+  {
+ "id": "006",
+ 
+ "name": "Dogy67",
+ 
+ "price": 32000,
+ "comment": "Thank you for gifting such a beautiful resource.",
+ "ratings":4.5,
+ "ratingsCount": 3725,
+ "img": "https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+ "shipping": 1,
+ "quantity": 0
+}
+
+  
+]
