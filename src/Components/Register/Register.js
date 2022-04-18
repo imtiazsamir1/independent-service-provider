@@ -21,6 +21,10 @@ const Register = () => {
 
     createUserWithEmailAndPassword(email, password);
   };
+
+  if (user) {
+    navigate("/home");
+  }
   return (
     <div>
       <div className="register-form">
