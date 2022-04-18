@@ -3,9 +3,7 @@
     color: aliceblue;
 }
 .about-footer{
- display: grid;
- grid-template-columns:repeat(3,1fr);
- padding: 35px;
+ 
 }
 .footer-ancor{
     text-decoration: none;
@@ -14,4 +12,9 @@
 .footer-ancor:hover{
    
     color: orange;
+   
+}
+.footer-cart{
+    border: none;
+    background: black;
 }

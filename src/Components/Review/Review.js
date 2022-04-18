@@ -7,7 +7,6 @@ const Review = () => {
   const [comments] = useComments();
   return (
     <div className="review-container">
-      <h1 className="review-heading">This is Review</h1>
       <div className="cart">
         {comments.map((comments) => (
           <Comments key={comments.id} comments={comments}></Comments>

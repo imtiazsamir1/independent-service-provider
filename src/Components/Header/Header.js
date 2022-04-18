@@ -1,23 +1,38 @@
 import React from "react";
 import "./Header.css";
 import CustomLink from "../CustomLink/CustomLink";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Liink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <div className="header">
-        <nav className="link">
-          <CustomLink className="project-name" to="/">
-            SPORTS
-          </CustomLink>
-          <CustomLink to="/"></CustomLink>
-          {/* <CustomLink to="/home">HOME</CustomLink> */}
-          <CustomLink to="/CheckOut">CheckOut</CustomLink>
-          <CustomLink to="/blogs">Blogs</CustomLink>
-          <CustomLink to="/about">About Me</CustomLink>
-          <CustomLink to="/logIn">LogIn</CustomLink>
-        </nav>
-      </div>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand as={Link} to="/home">
+            Sports-Photography
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/CheckOut">
+                CheckOut
+              </Nav.Link>
+              <Nav.Link as={Link} to="/blogs">
+                Blogs
+              </Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link as={Link} to="/about">
+                About{" "}
+              </Nav.Link>
+              <Nav.Link eventKey={2} as={Link} to="/logIn">
+                LogIn
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 };
