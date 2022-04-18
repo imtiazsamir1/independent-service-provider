@@ -12,10 +12,10 @@ const Header = () => {
           </CustomLink>
           <CustomLink to="/"></CustomLink>
           {/* <CustomLink to="/home">HOME</CustomLink> */}
-          <CustomLink to="/CheckOut">CeckOut</CustomLink>
+          <CustomLink to="/CheckOut">CheckOut</CustomLink>
           <CustomLink to="/blogs">Blogs</CustomLink>
           <CustomLink to="/about">About Me</CustomLink>
-          <CustomLink to="/signUp">SignUp</CustomLink>
+          <CustomLink to="/logIn">LogIn</CustomLink>
         </nav>
       </div>
     </div>

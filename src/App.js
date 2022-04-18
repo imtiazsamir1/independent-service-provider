@@ -7,7 +7,8 @@ import CheckOut from "./Components/CheckOut/CheckOut";
 
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
-import SignUp from "./Components/SignUp/SignUp";
+import LogIn from "./Components/LogIn/LogIn";
+import SignUp from "./Components/LogIn/LogIn";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/CheckOut" element={<CheckOut></CheckOut>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/signUp" element={<SignUp></SignUp>}></Route>
+        <Route path="logIn" element={<LogIn></LogIn>}></Route>
       </Routes>
     </div>
   );
