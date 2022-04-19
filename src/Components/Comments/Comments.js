@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Comments.css";
 
 const Comments = (props) => {
-  const { name, img, price, ratings, comment } = props.comments;
+  const { book, name, img, price, comment } = props.comments;
+  const navigate = useNavigate();
+  const navigateDetail = (id) => {
+    navigate(`/checkOut/${book}`);
+  };
   return (
     <div className="review-cart">
       <img className="comment-img" src={img} alt="" />
@@ -10,7 +15,9 @@ const Comments = (props) => {
       <h3 className="review-name"> {name}</h3>
       <h5>Price:{price}</h5>
       <h4> {comment}</h4>
-      <button className="cart-btn">Book</button>
+      <button onClick={() => navigateDetail(book)} className="btn btn-primary">
+        Book:{name}
+      </button>
     </div>
   );
 };

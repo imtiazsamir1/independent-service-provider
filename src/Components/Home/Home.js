@@ -9,6 +9,7 @@ import "./Home.css";
 import { Card, CardGroup } from "react-bootstrap";
 import { Button } from "bootstrap";
 import Extra from "../Extra/Extra";
+import { Carousel } from "bootstrap";
 // import DemoPic from "./Components/DemoPic/Demopic";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <div>
         <img className="d-block w-100" src={banner} alt="First slide" />
       </div>
+
       <h2 className="container-header">My Service</h2>
       <Review></Review>
       <Extra></Extra>

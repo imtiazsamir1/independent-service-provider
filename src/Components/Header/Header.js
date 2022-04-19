@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
-import CustomLink from "../CustomLink/CustomLink";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Liink, Link } from "react-router-dom";
+
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
@@ -16,7 +16,13 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        sticky="top"
+        bg="dark"
+        variant="dark"
+      >
         <Container>
           <Navbar.Brand as={Link} to="/home">
             Sports-Photography
@@ -47,9 +53,6 @@ const Header = () => {
                   Login
                 </Nav.Link>
               )}
-              {/* <Nav.Link eventKey={2} as={Link} to="/logIn">
-                LogIn
-              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
