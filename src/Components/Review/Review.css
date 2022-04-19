@@ -17,3 +17,8 @@
       margin-top: 10px;
    }
 }
+ @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .cart{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ } 
