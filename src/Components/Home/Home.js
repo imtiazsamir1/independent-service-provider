@@ -8,6 +8,7 @@ import img3 from "./images/img3.jpg";
 import "./Home.css";
 import { Card, CardGroup } from "react-bootstrap";
 import { Button } from "bootstrap";
+import Extra from "../Extra/Extra";
 // import DemoPic from "./Components/DemoPic/Demopic";
 
 const Home = () => {
@@ -16,8 +17,9 @@ const Home = () => {
       <div>
         <img className="d-block w-100" src={banner} alt="First slide" />
       </div>
-      <h2>My Service</h2>
+      <h2 className="container-header">My Service</h2>
       <Review></Review>
+      <Extra></Extra>
       <div>
         {/* <CardGroup>
           <Card className="cart">

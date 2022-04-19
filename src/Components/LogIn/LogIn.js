@@ -7,7 +7,10 @@ import {
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import Loading from "./Loading/Loading";
 import SocialLogin from "./SocialLogin/SocialLogin";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LogIn = () => {
   const emailRef = useRef("");
@@ -22,6 +25,9 @@ const LogIn = () => {
 
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
+  if (loading || sending) {
+    return <Loading></Loading>;
+  }
   if (user) {
     navigate(from, { replace: true });
   }
@@ -40,12 +46,16 @@ const LogIn = () => {
   const navigateRegister = (event) => {
     navigate("/register");
   };
-
   const resetPassword = async () => {
     const email = emailRef.current.value;
-    await sendPasswordResetEmail(email);
-    alert("send emai");
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Sent email");
+    } else {
+      toast("please enter your email address");
+    }
   };
+
   return (
     <div>
       <div className="container w-50 mx-auto">
@@ -95,6 +105,7 @@ const LogIn = () => {
           </button>{" "}
         </p>
         <SocialLogin></SocialLogin>
+        <ToastContainer />
       </div>
     </div>
   );

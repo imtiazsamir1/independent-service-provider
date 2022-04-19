@@ -7,6 +7,7 @@ import {
 import "./Register.css";
 import auth from "../../firebase.init";
 import { updateProfile } from "firebase/auth";
+import Loading from "../LogIn/Loading/Loading";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -19,6 +20,10 @@ const Register = () => {
   const navigateLogin = () => {
     navigate("/login");
   };
+
+  if (loading || updating) {
+    return <Loading></Loading>;
+  }
 
   if (user) {
     console.log("user", user);

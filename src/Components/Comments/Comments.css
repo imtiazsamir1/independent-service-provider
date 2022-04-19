@@ -1,8 +1,32 @@
 .comment-img{
-    height: 350px;
+    height: 300px;
     width: 500px;
+
 }
-/* .review-cart{
-    display: grid;
-    grid-template-columns: repeat(3fr,1fr);
-} */
+.review-cart{
+    border: 2px lightgray solid;
+    border-radius: 20px;
+    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 15px;
+    background-color: black;
+    color: aliceblue;
+}
+.cart-btn{
+    height: 30px;
+    width: 90px;
+    color:orangered;
+    
+
+}
+@media only screen and (max-width:576px) {
+    .review-cart{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ 
+ /* @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .review-cart{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ } */
