@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup, Col, Row } from "react-bootstrap";
+
 import "./Footer.css";
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 .comment-img{
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 250px;
 
 }
 .review-cart{
@@ -19,12 +19,7 @@
     
 
 }
-@media only screen and (max-width:576px) {
-    .review-cart{
-        grid-template-columns: repeat(1, 1fr);
-    }
- }
- 
+
  /* @media only screen and (min-width: 577px) and (max-width: 992px) {
     .review-cart{
         grid-template-columns: repeat(2, 1fr);

@@ -1,6 +1,7 @@
 import React from "react";
 import formal from "./img/formal.jpg";
 import "./About.css";
+import Footer from "../Footer/Footer";
 
 const About = () => {
   return (

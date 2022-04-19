@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./Components/About/About";
 import Blogs from "./Components/Blogs/Blogs";
 import CheckOut from "./Components/CheckOut/CheckOut";
+import Footer from "./Components/Footer/Footer";
 
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
