@@ -12,4 +12,4 @@
 - firebase deploy
 - env create
 - using Bootstarap
--etc
+
