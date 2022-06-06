@@ -104,7 +104,7 @@ const LogIn = () => {
             Reset Password
           </button>{" "}
         </p>
-        {/* hello */}
+
         <SocialLogin></SocialLogin>
         <ToastContainer />
       </div>
